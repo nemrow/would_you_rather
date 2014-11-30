@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 20141122181157) do
   enable_extension "plpgsql"
 
   create_table "rounds", force: true do |t|
-    t.string   "scenerio_1"
-    t.string   "scenerio_2"
+    t.text     "scenerio_1"
+    t.text     "scenerio_2"
     t.string   "author"
     t.datetime "created_at"
     t.datetime "updated_at"
