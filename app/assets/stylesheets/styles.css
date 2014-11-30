@@ -1,0 +1,131 @@
+h1.logo {
+  font-family: 'Bangers', cursive;
+  color:
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.main-text-1 {
+  color: #fff;
+}
+
+.main-text-2 {
+  color: #fff;
+}
+
+.card-container {
+  border: 3px dashed #aaa;
+  border-radius: 10px;
+  background-color: #eee
+}
+
+.single-scenerio-container p {
+  font-size: 30px;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.scenerio-divider {
+  position: relative;
+  height: 30px;
+}
+
+.scenerio-divider hr {
+  position: absolute;
+  border: 1px solid #000;
+  position: relative;
+  top: 10px;
+  width: 95%;
+  z-index: 2;
+}
+
+.scenerio-divider p {
+  z-index: 3;
+  text-align: center;
+  position: relative;
+}
+
+.scenerio-divider p span {
+  padding: 10px;
+  background-color: #eee;
+}
+
+.scenerio-divider .scenerio-divider-or-shell {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  height: 30px;
+}
+
+.bottom-divider {
+  width: 95%;
+  border: 1px solid #000;
+}
+
+button.card-button {
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Bangers', cursive;
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+  width: 40%;
+  margin: 10px 30px 20px 30px;
+}
+
+button.card-button-yes {
+  background-color: #4ea24e;
+}
+
+button.card-button-no {
+  float: right;
+  background-color: #a44f4f;
+}
+
+.submit-question-btn-shell {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.submit-question-btn-shell button {
+  font-size: 40px;
+  text-align: center;
+  background-color: #cb643b;
+  color: #fff;
+  font-family: 'Bangers', cursive;
+  border-radius: 4px;
+  border: none;
+  padding: 0 40px;
+}
+
+.submit-question-btn-shell p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.leaderboard-score {
+  background-color: #ccc;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.leaderboard-content {
+  font-size: 20px;
+  text-overflow: ellipsis;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.leaderboard-author {
+  color: #ccc;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 16px;
+}
