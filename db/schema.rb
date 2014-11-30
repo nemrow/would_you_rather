@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122181157) do
+ActiveRecord::Schema.define(version: 20141130203040) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,13 @@ ActiveRecord::Schema.define(version: 20141122181157) do
     t.text     "scenerio_1"
     t.text     "scenerio_2"
     t.string   "author"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "votes", force: true do |t|
+    t.integer  "value"
+    t.integer  "round_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
