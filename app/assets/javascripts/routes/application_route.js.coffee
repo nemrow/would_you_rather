@@ -1,4 +1,4 @@
-WouldYouRather.RoundsRoute = Ember.Route.extend
+WouldYouRather.ApplicationRoute = Ember.Route.extend
   model: ->
     @store.find('round')
 

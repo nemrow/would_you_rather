@@ -29,7 +29,7 @@
             <div class="col-md-8 col-md-offset-2">
               <div class="card-container">
                 <div class="single-scenerio-container">
-                  <p>scenerio 1</p>
+                  <p>{{randomCard.scenerio_1}}</p>
                 </div>
                 <div class="scenerio-divider">
                   <hr>
@@ -38,11 +38,11 @@
                   </div>
                 </div>
                 <div class="single-scenerio-container">
-                  <p>scenerio 2</p>
+                  <p>{{randomCard.scenerio_2}}</p>
                 </div>
                 <hr class="bottom-divider">
                 <div>
-                  <button class="card-button card-button-yes">WYR</button>
+                  <button class="card-button card-button-yes" {{action 'addToGame'}}>WYR</button>
                   <button class="card-button card-button-no">NAH</button>
                 </div>
               </div>
