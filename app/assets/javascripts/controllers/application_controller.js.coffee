@@ -11,12 +11,11 @@ WouldYouRather.ApplicationController = Ember.Controller.extend
     length = parseInt(@get('model').get('length'))
     parseInt((Math.random() * length).toFixed())
 
-  actions: {
-    upVoteRound: ->
-      $.post( "/vote_up", { round_id: @get('randomCard').get('id') })
+  actions:
+    upVoteRound: (id) ->
+      $.post( "/vote_up.id", { round_id: id })
       @set('randomIndex', @getRandomIndex())
 
-    downVoteRound: ->
-      $.post( "/vote_down", { round_id: @get('randomCard').get('id') })
+    downVoteRound: (id) ->
+      $.post( "/vote_down", { round_id: id })
       @set('randomIndex', @getRandomIndex())
-  }

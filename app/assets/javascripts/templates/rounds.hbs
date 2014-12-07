@@ -1,5 +1,5 @@
 {{#each model}}
-  <div class="col-lg-12 leaderboard-row">
+  {{#link-to 'rounds.show' this tagName="div" class="col-lg-12 leaderboard-row"}}
     <div class="col-lg-2">
       <p class="leaderboard-score">{{score}}</p>
     </div>
@@ -9,5 +9,5 @@
     <div class="col-lg-3">
       <p class="leaderboard-author">{{author}}</p>
     </div>
-  </div>
+  {{/link-to}}
 {{/each}}

@@ -106,6 +106,14 @@ button.card-button-no {
   margin-top: 20px;
 }
 
+.leaderboard-row {
+  cursor: pointer;
+}
+
+.leaderboard-row:hover {
+  background-color: #999;
+}
+
 .leaderboard-score {
   background-color: #ccc;
   font-size: 30px;

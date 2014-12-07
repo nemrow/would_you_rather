@@ -22,7 +22,6 @@
       <h1 class="main-text-2">Vote on which user submitted questions should be included in the game, or submit your own!</h1>
     </header>
 
-<button {{action 'openSingleRound'}}>click</button>
     <!-- Content Section -->
     <section>
       <div class="container">
@@ -44,8 +43,8 @@
                 </div>
                 <hr class="bottom-divider">
                 <div>
-                  <button class="card-button card-button-yes" {{action 'upVoteRound'}}>WYR</button>
-                  <button class="card-button card-button-no" {{action 'downVoteRound'}}>NAH</button>
+                  <button class="card-button card-button-yes" {{action 'upVoteRound' randomCard.id}}>WYR</button>
+                  <button class="card-button card-button-no" {{action 'downVoteRound' randomCard.id}}>NAH</button>
                 </div>
               </div>
             </div>
