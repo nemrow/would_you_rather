@@ -1,8 +1,8 @@
 {{#modal-dialog close='close'}}
   <div class="col-lg-12">
-    <div class="card-container">
+    <div class="card-container submit-container">
       <div class="single-scenerio-container">
-        <p>{{model.scenerio_1}}</p>
+        {{textarea valueBinding='model.scenerio_1' placeholder="Scenerio 1"}}
       </div>
       <div class="scenerio-divider">
         <hr>
@@ -11,14 +11,16 @@
         </div>
       </div>
       <div class="single-scenerio-container">
-        <p>{{model.scenerio_2}}</p>
+        {{textarea valueBinding='model.scenerio_2' placeholder="Scenerio 2"}}
       </div>
       <hr class="bottom-divider">
       <div class="button-shell">
         <table>
           <tr>
-            <td><button class="card-button card-button-yes" {{action 'upVoteRound' model}}>WYR</button></td>
-            <td><button class="card-button card-button-no" {{action 'downVoteRound' model}}>NAH</button></td>
+            <td>{{input valueBinding='model.author' placeholder="ex: @nemrow"}}</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><button class="card-button card-button-yes" {{action 'submit' model}}>Submit</button></td>
           </tr>
         </table>
       </div>

@@ -42,9 +42,13 @@
                   <p>{{randomCard.scenerio_2}}</p>
                 </div>
                 <hr class="bottom-divider">
-                <div>
-                  <button class="card-button card-button-yes" {{action 'upVoteRound' randomCard.id}}>WYR</button>
-                  <button class="card-button card-button-no" {{action 'downVoteRound' randomCard.id}}>NAH</button>
+                <div class="button-shell">
+                  <table>
+                    <tr>
+                      <td><button class="card-button card-button-yes" {{action 'upVoteRound' randomCard.id}}>WYR</button></td>
+                      <td><button class="card-button card-button-no" {{action 'downVoteRound' randomCard.id}}>NAH</button></td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
@@ -53,7 +57,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="submit-question-btn-shell">
-                <button>Submit Question</button>
+                {{#link-to 'rounds.submit' tagName="button"}}
+                  Submit Question
+                {{/link-to}}
                 <p>Submit question and if yours is selected for the game we will give you mad props</p>
               </div>
             </div>
@@ -75,7 +81,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Go Fuck Yourself 2014</p>
                 </div>
             </div>
             <!-- /.row -->

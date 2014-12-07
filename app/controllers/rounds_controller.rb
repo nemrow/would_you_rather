@@ -20,4 +20,9 @@ class RoundsController < ApplicationController
   def update
     render json: Round.find(params[:id]).update(params[:round])
   end
+
+  private
+    def rounds_strong_params
+
+    end
 end
