@@ -2,7 +2,7 @@ class RoundsController < ApplicationController
   respond_to :json
 
   def index
-    render json: Round.all
+    render json: Round.first(20)
   end
 
   def create
