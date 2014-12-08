@@ -1,6 +1,10 @@
 h1.logo {
   font-family: 'Bangers', cursive;
-  color:
+  float: left;
+}
+
+.navbar-text {
+  margin-top: 28px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -39,6 +43,10 @@ h1, h2, h3, h4, h5, h6, p {
   top: 10px;
   width: 95%;
   z-index: 2;
+}
+
+.submit-container {
+  text-align: center;
 }
 
 .submit-container textarea {
@@ -154,4 +162,17 @@ button.card-button-no {
   font-size: 20px;
   text-align: center;
   margin-top: 16px;
+}
+
+.author-name {
+  width: 300px;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  text-align: center;
+  margin: 0;
+}
+
+.navbar-header {
+  width: 100%;
 }

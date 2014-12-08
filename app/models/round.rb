@@ -14,4 +14,19 @@ class Round < ActiveRecord::Base
     v = Vote.create(value: -1)
     votes << v
   end
+
+  def self.top_rated_ids(limit)
+    ActiveRecord::Base.connection.select_values("
+      select r.id
+      from rounds r
+      join votes v on v.round_id = r.id
+      group by r.id
+      order by sum(v.value) desc
+      limit #{limit}
+    ")
+  end
+
+  def self.top_rated(limit=100)
+    Round.find(top_rated_ids(limit)).sort_by{|i| i.score}.reverse
+  end
 end
