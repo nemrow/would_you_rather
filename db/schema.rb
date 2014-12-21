@@ -11,10 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141130203040) do
+ActiveRecord::Schema.define(version: 20141221015723) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "email_addresses", force: true do |t|
+    t.string   "email_address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "rounds", force: true do |t|
     t.text     "scenerio_1"
@@ -27,6 +33,7 @@ ActiveRecord::Schema.define(version: 20141130203040) do
   create_table "votes", force: true do |t|
     t.integer  "value"
     t.integer  "round_id"
+    t.string   "ip_address"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

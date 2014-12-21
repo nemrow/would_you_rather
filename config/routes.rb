@@ -5,4 +5,5 @@ Rails.application.routes.draw do
 
   post "vote_up", to: "votes#vote_up"
   post "vote_down", to: "votes#vote_down"
+  post "email_address", to: "email_address#create"
 end

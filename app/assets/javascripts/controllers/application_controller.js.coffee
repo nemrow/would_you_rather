@@ -17,5 +17,8 @@ WouldYouRather.ApplicationController = Ember.Controller.extend
       @set('randomIndex', @getRandomIndex())
 
     downVoteRound: (id) ->
-      $.post( "/vote_down", { round_id: id })
       @set('randomIndex', @getRandomIndex())
+
+    submitEmail: ->
+      $.post( "/email_address", { emailAddress: @get('emailAddress') }).success ->
+        alert("Thanks!!")

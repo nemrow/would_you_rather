@@ -1,10 +1,12 @@
 h1.logo {
   font-family: 'Bangers', cursive;
   float: left;
+  padding-left: 10px;
 }
 
 .navbar-text {
   margin-top: 28px;
+  padding-left: 10px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -175,4 +177,53 @@ button.card-button-no {
 
 .navbar-header {
   width: 100%;
+}
+
+footer {
+  background-color: #000;
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+
+footer h3 {
+  color: #fff;
+  text-align: center;
+}
+
+input {
+  font-size: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+footer button {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #ef662f;
+  font-family: 'Bangers', cursive;
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.button-explain {
+  clear: both;
+  text-align: center;
+  width: 90%;
+  margin: 0px;
+}
+
+.right {
+  float: right;
+}
+
+h1.wyr-text {
+  text-align: center;
+}
+
+section {
+  padding: 40px 0;
 }

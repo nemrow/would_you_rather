@@ -10,7 +10,9 @@ class RoundsController < ApplicationController
   end
 
   def create
-    render json: Round.create(rounds_strong_params)
+    round = Round.create(rounds_strong_params)
+    round.vote_up
+    render json: round
   end
 
   def show

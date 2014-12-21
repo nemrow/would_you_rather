@@ -4,10 +4,15 @@ WouldYouRather.RoundsShowController = Ember.Controller.extend
       @transitionToRoute("application")
 
     upVoteRound: (round) ->
-      round.set("score", round.get('score') + 1)
-      $.post( "/vote_up.id", { round_id: round.id })
+      $.post( "/vote_up.id", { round_id: round.id }).done (response) ->
+        console.log response.success
+        if response.success
+          round.set("score", round.get('score') + 1)
+        else
+          alert "You already voted for that one. Don't be an A-Hole."
+
+        $('.modal').modal('hide')
 
     downVoteRound: (round) ->
-      round.set("score", round.get('score') - 1)
-      $.post( "/vote_down", { round_id: round.id })
+      $('.modal').modal('hide')
 

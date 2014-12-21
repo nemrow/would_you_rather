@@ -3,13 +3,7 @@ class VotesController < ApplicationController
 
   def vote_up
     round = Round.find(params[:round_id])
-    round.vote_up
-    render json: {success: true}
-  end
-
-  def vote_down
-    round = Round.find(params[:round_id])
-    round.vote_down
-    render json: {success: true}
+    vote = round.vote_up(request.remote_ip)
+    render json: {success: vote}
   end
 end
