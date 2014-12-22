@@ -3,7 +3,6 @@
 // github.com/t4t5/sweetalert
 ;(function(window, document) {
 
-  alert("slksjlksjlskjs")
   var modalClass   = '.sweet-alert',
       overlayClass = '.sweet-overlay',
       alertTypes   = ['error', 'warning', 'info', 'success'],
