@@ -9,7 +9,7 @@ WouldYouRather.ApplicationController = Ember.Controller.extend
 
   getRandomIndex: ->
     length = parseInt(@get('model').get('length'))
-    parseInt((Math.random() * length).toFixed())
+    parseInt(Math.floor(Math.random() * length))
 
   actions:
     upVoteRound: (id) ->
