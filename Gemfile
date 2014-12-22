@@ -6,7 +6,6 @@ gem 'rails', '4.1.6'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
-gem 'sass-rails'
 
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
