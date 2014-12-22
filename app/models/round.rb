@@ -4,7 +4,7 @@ class Round < ActiveRecord::Base
   before_save :anonymous_author
 
   def anonymous_author
-    author = "anonymous" if author.blank?
+    self.author = "anonymous" if author.blank?
   end
 
   def score
