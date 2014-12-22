@@ -1,4 +1,4 @@
-alert("slksjlksjlskj")
+alert("slksjlksjlskjs")
 // SweetAlert
 // 2014 (c) - Tristan Edwards
 // github.com/t4t5/sweetalert
