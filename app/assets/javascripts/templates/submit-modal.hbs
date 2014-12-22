@@ -15,18 +15,21 @@
       </div>
       <hr class="bottom-divider">
       <div class="button-shell">
-        <table>
+        <table class="submit-round-options">
           <tr>
             <td>{{input valueBinding='model.author' placeholder="ex: @nemrow" class="author-name"}}</td>
           </tr>
           <tr>
-            <td><p>so we can give you cred!</p></td>
+            <td>
+              <p>so we can give you cred!<p>
+              <p class="sub-sub-texty">(or leave blank to remain anonymous)</p>
+            </td>
           </tr>
           <tr>
             <td>{{input valueBinding='model.email' placeholder="Email Address" class="author-name"}}</td>
           </tr>
           <tr>
-            <td><p>To let you know if it gets chosen!</p></td>
+            <td><p>To let you know if it gets chosen!</p><br></td>
           </tr>
           <tr>
             <td style="text-align: center;"><button class="card-button card-button-yes" {{action 'submit' model}}>Submit</button></td>

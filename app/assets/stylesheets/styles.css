@@ -240,3 +240,11 @@ section {
 .main-text-2 {
   font-size: 30px;
 }
+
+.submit-round-options p{
+  margin: 0px;
+}
+
+.submit-round-options p.sub-sub-texty{
+  font-size: 10px;
+  margin-bottom: 10px;

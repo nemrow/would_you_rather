@@ -1,6 +1,12 @@
 class Round < ActiveRecord::Base
   has_many :votes
 
+  before_save :anonymous_author
+
+  def anonymous_author
+    author = "anonymous" if author.blank?
+  end
+
   def score
     votes.sum(:value)
   end
