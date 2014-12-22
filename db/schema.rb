@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20141221015723) do
     t.text     "scenerio_1"
     t.text     "scenerio_2"
     t.string   "author"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

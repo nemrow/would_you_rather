@@ -5,7 +5,7 @@ class Round < ActiveRecord::Base
     votes.sum(:value)
   end
 
-  def vote_up(ip_address)
+  def vote_up(ip_address=nil)
     v = Vote.create(value: 1, ip_address: ip_address)
     votes << v
   end

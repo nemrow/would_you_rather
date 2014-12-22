@@ -4,6 +4,7 @@ class CreateRounds < ActiveRecord::Migration
       t.text :scenerio_1
       t.text :scenerio_2
       t.string :author
+      t.string :email
 
       t.timestamps
     end

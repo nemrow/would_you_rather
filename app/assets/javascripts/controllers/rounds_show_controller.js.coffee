@@ -9,7 +9,7 @@ WouldYouRather.RoundsShowController = Ember.Controller.extend
         if response.success
           round.set("score", round.get('score') + 1)
         else
-          alert "You already voted for that one. Don't be an A-Hole."
+          swal "You already voted for that one. Don't be an A-Hole."
 
         $('.modal').modal('hide')
 

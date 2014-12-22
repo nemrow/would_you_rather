@@ -5,7 +5,7 @@ class RoundsController < ApplicationController
     if params[:random]
       render json: Round.limit(100).order("RANDOM()")
     elsif params[:top_rated]
-      render json: Round.top_rated
+      render json: Round.top_rated(30)
     end
   end
 
@@ -29,6 +29,6 @@ class RoundsController < ApplicationController
 
   private
     def rounds_strong_params
-      params.require(:round).permit(:scenerio_1, :scenerio_2, :author)
+      params.require(:round).permit(:scenerio_1, :scenerio_2, :author, :email)
     end
 end

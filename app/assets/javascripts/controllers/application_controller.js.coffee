@@ -21,4 +21,4 @@ WouldYouRather.ApplicationController = Ember.Controller.extend
 
     submitEmail: ->
       $.post( "/email_address", { emailAddress: @get('emailAddress') }).success ->
-        alert("Thanks!!")
+        swal("Thanks!!")
