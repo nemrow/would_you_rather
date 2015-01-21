@@ -1,3 +1,4 @@
+#= require_tree ./initializers
 #= require_tree ./vendor
 #= require ./store
 #= require_tree ./models

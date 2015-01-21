@@ -7,9 +7,17 @@ WouldYouRather.ApplicationController = Ember.Controller.extend
     @getRandomIndex()
   ).property('randomIndex')
 
-  getRandomIndex: ->
+  indexSet: []
+
+  generateIndexSet: ->
     length = parseInt(@get('model').get('length'))
-    parseInt(Math.floor(Math.random() * length))
+    arr = [1..length].map (n) -> n - 1
+    arr.shuffle()
+    arr
+
+  getRandomIndex: ->
+    @set('indexSet', @generateIndexSet()) if @get('indexSet').length == 0
+    @get('indexSet').shift()
 
   actions:
     upVoteRound: (id) ->
